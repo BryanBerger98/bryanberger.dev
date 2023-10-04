@@ -1,10 +1,11 @@
-import { Download, ExternalLink, MessageSquare } from 'lucide-react';
+import { Download, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import AboutMe from './_components/AboutMe';
+import Footer from './_components/Footer';
 import Navbar from './_components/Navbar';
 import OpenSourceProjects from './_components/Projects/OpenSourceProjects';
 import OtherProjects from './_components/Projects/OtherProjects';
@@ -28,25 +29,33 @@ const Home = () => {
 						<div className="flex gap-4 mb-32">
 							<Button
 								className="gap-2"
-								type="button"
+								asChild
 							>
-								<Download size="16" />
-								Download my résumé
+								<Link
+									href="/Bryan_Berger.pdf"
+									target="_blank"
+								>
+									<Download size="16" />
+									Download my résumé
+								</Link>
 							</Button>
-							<Button
+							{ /* <Button
 								className="gap-2"
 								type="button"
 								variant="secondary"
 							>
 								<MessageSquare size="16" />
 								Text me
-							</Button>
+							</Button> */ }
 						</div>
 						<AboutMe />
 					</div>
 				</div>
 			</div>
-			<div className="container m-auto text-center py-8 flex flex-col gap-8">
+			<div
+				className="container m-auto text-center py-8 flex flex-col gap-8"
+				id="projects"
+			>
 				<h2 className="text-5xl font-bold">My projects</h2>
 				<p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua.
@@ -92,6 +101,7 @@ const Home = () => {
 					</Link>
 				</Button>
 			</div>
+			<Footer />
 		</>
 	);
 };

@@ -20,7 +20,7 @@ const Navbar = () => {
 				<NavigationMenuList>
 					<NavigationMenuItem>
 						<Link
-							href="/docs"
+							href="#aboutme"
 							legacyBehavior
 							passHref
 						>
@@ -33,7 +33,7 @@ const Navbar = () => {
 					</NavigationMenuItem>
 					<NavigationMenuItem>
 						<Link
-							href="/docs"
+							href="#projects"
 							legacyBehavior
 							passHref
 						>
@@ -44,11 +44,15 @@ const Navbar = () => {
 					</NavigationMenuItem>
 					<NavigationMenuItem>
 						<Link
-							href="/docs"
+							href="https://linkedin.com/in/bryanbrg"
+							target="_blank"
 							legacyBehavior
 							passHref
 						>
-							<NavigationMenuLink className={ navigationMenuTriggerStyle({ className: 'bg-primary !text-primary-foreground hover:bg-primary/90' }) }>
+							<NavigationMenuLink
+								className={ navigationMenuTriggerStyle({ className: 'bg-primary !text-primary-foreground hover:bg-primary/90' }) }
+								target="_blank"
+							>
 								Work with me
 							</NavigationMenuLink>
 						</Link>
