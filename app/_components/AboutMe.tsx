@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { Button } from '@/components/ui/button';
 import bryanJpg from '@/public/bryan.jpg';
 
 const AboutMe = () => {
+
 
 	const birthDate = new Date(1998, 7, 1);
 
