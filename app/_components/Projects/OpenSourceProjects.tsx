@@ -10,7 +10,7 @@ const projects: ProjectData[] = [
 	{
 		id: 1,
 		title: 'datepicker',
-		description: 'React date picker designed with shadcn/ui',
+		description: 'React date picker designed with shadcn/ui.',
 		github_url: 'https://github.com/BryanBerger98/datepicker',
 		status: 'under-development',
 		github_stars: 0,
