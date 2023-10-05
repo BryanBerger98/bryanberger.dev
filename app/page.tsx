@@ -15,18 +15,18 @@ const Home = () => {
 
 	return (
 		<>
-			<div className="py-8 bg-gradient-to-tr from-[#97f0ff] to-[#aa95fe] min-h-screen">
+			<div className="py-2 lg:py-8 bg-gradient-to-tr relative from-[#97f0ff] to-[#aa95fe] min-h-[125vh] xs:min-h-[100vh] lg:min-h-screen">
 				<div className="absolute inset-0 bg-gradient-to-t from-white to-transparent">
-					<div className="px-8 py-8">
+					<div className="px-2 lg:px-8 py-2 lg:py-8">
 						<Navbar />
 					</div>
-					<div className="container m-auto">
-						<div className="pt-24 flex flex-col gap-6 mb-11">
-							<p className="text-3xl font-semibold">Hello there! 👋</p>
-							<h1 className="text-8xl font-bold">I&apos;m Bryan Berger</h1>
-							<h2 className="text-6xl font-semibold">a passionate web developer</h2>
+					<div className="w-full px-2 lg:px-0 lg:container lg:m-auto">
+						<div className="pt-8 lg:pt-24 flex flex-col gap-3 lg:gap-6 mb-6 lg:mb-11">
+							<p className="text-lg lg:text-3xl font-semibold">Hello there! 👋</p>
+							<h1 className="text-3xl lg:text-8xl font-bold">I&apos;m Bryan Berger</h1>
+							<h2 className="text-xl lg:text-6xl font-semibold">a passionate web developer</h2>
 						</div>
-						<div className="flex gap-4 mb-32">
+						<div className="flex gap-4 mb-12 lg:mb-32">
 							<Button
 								className="gap-2"
 								asChild
@@ -53,17 +53,17 @@ const Home = () => {
 				</div>
 			</div>
 			<div
-				className="container m-auto text-center py-8 flex flex-col gap-8"
+				className="px-2 w-full lg:px-0 lg:container lg:m-auto text-center py-8 flex flex-col gap-8"
 				id="projects"
 			>
-				<h2 className="text-5xl font-bold">My projects</h2>
+				<h2 className="text-3xl lg:text-5xl font-bold">My projects</h2>
 				<p className="text-sm text-muted-foreground">The projects of a very passionate developer are still moving and more are coming!
 				</p>
 				<Tabs
 					className="text-left"
 					defaultValue="open-source"
 				>
-					<TabsList className="grid grid-cols-3 mb-8 w-fit mx-auto">
+					<TabsList className="w-full grid grid-cols-3 mb-8 lg:w-fit mx-auto">
 						<TabsTrigger value="open-source">Open source</TabsTrigger>
 						<TabsTrigger value="professional">Professional</TabsTrigger>
 						<TabsTrigger value="other">Other</TabsTrigger>

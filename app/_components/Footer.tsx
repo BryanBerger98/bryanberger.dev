@@ -9,10 +9,10 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="container m-auto px-8">
+		<footer className="px-2 w-full lg:container lg:m-auto lg:px-8">
 			<Separator orientation="horizontal" />
-			<div className="grid grid-cols-12 pt-8 pb-16">
-				<div className="col-start-1 col-span-6 flex flex-col justify-between items-start">
+			<div className="grid grid-cols-1 lg:grid-cols-12 pt-8 pb-8 lg:pb-16">
+				<div className="lg:col-start-1 lg:col-span-6 flex flex-col justify-between items-start">
 					<Link
 						className="flex items-center gap-4"
 						href="/"
@@ -32,7 +32,7 @@ const Footer = () => {
 						</Link>
 					</Button>
 				</div>
-				<nav className="col-start-7 col-span-3">
+				<nav className="hidden lg:block lg:col-start-7 lg:col-span-3">
 					<ul>
 						<li>
 							<Button
@@ -67,7 +67,7 @@ const Footer = () => {
 							</li> */ }
 					</ul>
 				</nav>
-				<nav className="col-start-10 col-span-3">
+				<nav className="lg:col-start-10 lg:col-span-3">
 					<ul>
 						<li>
 							<Button

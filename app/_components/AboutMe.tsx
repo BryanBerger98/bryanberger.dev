@@ -20,14 +20,14 @@ const AboutMe = () => {
 
 	return (
 		<div
-			className="grid grid-cols-12 grid-rows-6"
+			className="grid grid-cols-2 lg:grid-cols-12 grid-rows-6"
 			id="aboutme"
 		>
-			<div className="col-start-1 col-span-8 row-start-1 row-span-6 pt-10">
-				<h3 className="text-5xl font-bold mb-14">About me</h3>
-				<div className="p-8 border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-lg rounded-2xl relative z-20">
+			<div className="col-start-1 col-span-2 lg:col-start-1 lg:col-span-8 row-start-1 row-span-6 lg:pt-10">
+				<h3 className="hidden lg:block text-2xl lg:text-5xl font-bold mb-14">About me</h3>
+				<div className="hidden lg:block p-8 border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-lg rounded-2xl relative z-20">
 					<h2 className="text-2xl font-semibold mb-9">Who is Bryan?</h2>
-					<p className="text-base mb-8">
+					<p className="text-sm lg:text-base mb-8">
 						<span className="mr-1">
 							Hello! I&apos;m Bryan Berger, a { getAgeFromDate(birthDate) } years old web developer from France.
 							Passionate about automation, optimization and efficiency, I love to learn new ways to solve problems and find answers to every needs.
@@ -47,7 +47,7 @@ const AboutMe = () => {
 						</Button>
 						<span>, a YouTube channel specialized in React and its ecosystem, for helping people to improve their skills and learn new things.</span>
 					</p>
-					<p className="text-base">
+					<p className="text-sm lg:text-base">
 						<span className="mr-1">I also love the concept of behind the open-source idea. The most of my projects are open-source, under MIT lisense, and available on my</span>
 						<Button
 							className="font-bold text-base p-0 h-fit"
@@ -65,7 +65,7 @@ const AboutMe = () => {
 					</p>
 				</div>
 			</div>
-			<div className="col-start-8 col-span-4 row-start-1 row-span-5">
+			<div className="col-start-1 col-span-2 lg:col-start-8 lg:col-span-4 row-start-1 row-span-5">
 				<div className="w-fit h-fit rounded-2xl drop-shadow-lg">
 					<Image
 						alt="Bryan Berger"

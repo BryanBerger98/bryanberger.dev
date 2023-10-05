@@ -8,17 +8,17 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 const Navbar = () => {
 
 	return (
-		<nav className="flex justify-between items-center p-8 border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-sm rounded-2xl">
+		<nav className="flex justify-between items-center p-4 lg:p-6 border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-sm rounded-2xl">
 			<Link
-				className="text-3xl flex items-center gap-4"
+				className="text-base lg:text-3xl flex items-center gap-2 lg:gap-4"
 				href="/"
 			>
-				<Layers size="32" />
+				<Layers className="h-4 w-4 lg:h-8 lg:w-8" />
 				<span className="font-semibold">Bryan Berger</span>
 			</Link>
 			<NavigationMenu>
 				<NavigationMenuList>
-					<NavigationMenuItem>
+					<NavigationMenuItem className="hidden lg:inline-flex">
 						<Link
 							href="#aboutme"
 							legacyBehavior
@@ -31,7 +31,7 @@ const Navbar = () => {
 							</NavigationMenuLink>
 						</Link>
 					</NavigationMenuItem>
-					<NavigationMenuItem>
+					<NavigationMenuItem className="hidden lg:inline-flex">
 						<Link
 							href="#projects"
 							legacyBehavior
