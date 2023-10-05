@@ -6,7 +6,6 @@ import bryanJpg from '@/public/bryan.jpg';
 
 const AboutMe = () => {
 
-
 	const birthDate = new Date(1998, 7, 1);
 
 	const getAgeFromDate = (date: Date) => {
