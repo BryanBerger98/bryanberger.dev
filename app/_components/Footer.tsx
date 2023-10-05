@@ -40,8 +40,7 @@ const Footer = () => {
 								asChild
 							>
 								<Link
-									href="/"
-									scroll={ false }
+									href="#aboutme"
 								>
 									Who is Bryan?
 								</Link>
@@ -52,7 +51,9 @@ const Footer = () => {
 								variant="link"
 								asChild
 							>
-								<Link href="/">
+								<Link
+									href="#projects"
+								>
 									Projects
 								</Link>
 							</Button>

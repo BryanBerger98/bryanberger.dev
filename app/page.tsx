@@ -57,8 +57,7 @@ const Home = () => {
 				id="projects"
 			>
 				<h2 className="text-5xl font-bold">My projects</h2>
-				<p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua.
+				<p className="text-sm text-muted-foreground">The projects of a very passionate developer are still moving and more are coming!
 				</p>
 				<Tabs
 					className="text-left"

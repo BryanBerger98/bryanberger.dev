@@ -1,8 +1,22 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 import bryanJpg from '@/public/bryan.jpg';
 
 const AboutMe = () => {
+
+
+	const birthDate = new Date(1998, 7, 1);
+
+	const getAgeFromDate = (date: Date) => {
+		const today = new Date();
+		let age = today.getFullYear() - date.getFullYear();
+		const m = today.getMonth() - date.getMonth();
+		if (m < 0 || (m === 0 && today.getDate() < date.getDate())) {
+			age--;
+		}
+		return age;
+	};
 
 	return (
 		<div
@@ -14,28 +28,40 @@ const AboutMe = () => {
 				<div className="p-8 border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-lg rounded-2xl relative z-20">
 					<h2 className="text-2xl font-semibold mb-9">Who is Bryan?</h2>
 					<p className="text-base mb-8">
-						Hello! I&apos;m Bryan Berger, a 25 years old web developer from France. I&apos;m currently studying at <a
-							href="https://www.epitech.eu/fr/"
-							rel="noopener noreferrer"
-							target="_blank"
-						                                                                                                       >Epitech
-                                                                                                             </a> in Paris.
-						I&apos;m passionate about web development and I love to learn new things.
-						I&apos;m a very curious person and I like to discover new technologies.
-						I&apos;m also a gamer, I love to play video games with my friends.
-						I&apos;m a very social person and I love to meet new people.
+						<span className="mr-1">
+							Hello! I&apos;m Bryan Berger, a { getAgeFromDate(birthDate) } years old web developer from France.
+							Passionate about automation, optimization and efficiency, I love to learn new ways to solve problems and find answers to every needs.
+							I&apos;m also passionate about teaching and sharing my knowledge with others. That&apos;s why I created
+						</span>
+						<Button
+							className="font-bold text-base p-0 h-fit"
+							variant="link"
+							asChild
+						>
+							<Link
+								href="https://youtube.com/@atomicreact"
+								target="_blank"
+							>
+								Atomic React
+							</Link>
+						</Button>
+						<span>, a YouTube channel specialized in React and its ecosystem, for helping people to improve their skills and learn new things.</span>
 					</p>
 					<p className="text-base">
-						Hello! I&apos;m Bryan Berger, a 25 years old web developer from France. I&apos;m currently studying at <a
-							href="https://www.epitech.eu/fr/"
-							rel="noopener noreferrer"
-							target="_blank"
-						                                                                                                       >Epitech
-                                                                                                             </a> in Paris.
-						I&apos;m passionate about web development and I love to learn new things.
-						I&apos;m a very curious person and I like to discover new technologies.
-						I&apos;m also a gamer, I love to play video games with my friends.
-						I&apos;m a very social person and I love to meet new people.
+						<span className="mr-1">I also love the concept of behind the open-source idea. The most of my projects are open-source, under MIT lisense, and available on my</span>
+						<Button
+							className="font-bold text-base p-0 h-fit"
+							variant="link"
+							asChild
+						>
+							<Link
+								href="https://github.com/BryanBerger98"
+								target="_blank"
+							>
+								GitHub
+							</Link>
+						</Button>
+						<span> profile. Check out below to see my main projects.</span>
 					</p>
 				</div>
 			</div>

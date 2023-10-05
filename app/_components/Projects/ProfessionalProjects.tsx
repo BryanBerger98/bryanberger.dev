@@ -14,7 +14,7 @@ const projects: ProjectData[] = [
 	{
 		id: 1,
 		title: 'Shellby.io',
-		description: 'L\'entreprise humaine pour mes besoins IT',
+		description: 'L\'entreprise humaine pour mes besoins IT.',
 		status: 'released',
 		website_url: 'https://shellby.io',
 		technos: [
@@ -47,7 +47,7 @@ const projects: ProjectData[] = [
 	{
 		id: 2,
 		title: 'CrossFit La Fontaine',
-		description: 'Salle de sport à Château-Thierry (02)',
+		description: 'Salle de sport à Château-Thierry (02).',
 		status: 'released',
 		website_url: 'https://crossfit-lafontaine.com',
 		technos: [
