@@ -3,7 +3,13 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Bryan Berger',
-	description: 'A passionate web developer',
+	description: 'Bryan Berger, a passionate web developer. I build websites and apps with React, Next.js, TypeScript and TailwindCSS.',
+	keywords: 'web, developer, react, next, typescript, javascript',
+	creator: 'Bryan Berger',
+	authors: {
+		name: 'Bryan Berger',
+		url: 'https://bryanberger.dev',
+	},
 };
 
 const RootLayout = ({ children }: {
