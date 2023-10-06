@@ -53,7 +53,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div
-				className="px-2 w-full md:px-8 lg:px-0 lg:container lg:m-auto text-center py-8 flex flex-col gap-8"
+				className="px-2 w-full md:px-8 lg:px-0 lg:container lg:m-auto text-center py-8 flex flex-col gap-8 md:pt-24 lg:pt-8"
 				id="projects"
 			>
 				<h2 className="text-3xl lg:text-5xl font-bold">My projects</h2>
