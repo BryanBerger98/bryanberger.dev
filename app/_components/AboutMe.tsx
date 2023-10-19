@@ -20,10 +20,10 @@ const AboutMe = () => {
 
 	return (
 		<div
-			className="grid grid-cols-2 lg:grid-cols-12 grid-rows-6"
+			className="grid grid-cols-2 lg:grid-cols-12 md:grid-rows-6"
 			id="aboutme"
 		>
-			<div className="!col-start-1 col-span-2 md:col-span-10 2xl:col-span-9 row-start-1 row-span-6 lg:pt-10">
+			<div className="!col-start-1 col-span-2 md:col-span-9 2xl:col-span-9 row-start-1 row-span-6 lg:pt-10">
 				<h3 className="hidden md:block text-2xl lg:text-3xl 2xl:text-5xl font-bold mb-14 lg:mb-10 2xl:mb-14">About me</h3>
 				<div className="hidden md:block p-8 border border-slate-100 bg-white/50 backdrop-blur-lg drop-shadow-lg rounded-2xl relative z-20">
 					<h2 className="text-2xl font-semibold mb-9">Who is Bryan?</h2>
@@ -65,14 +65,14 @@ const AboutMe = () => {
 					</p>
 				</div>
 			</div>
-			<div className="col-start-1 col-span-2 md:col-start-10 md:col-span-4 2xl:col-start-9 2xl:col-span-4 row-start-1 row-span-5">
-				<div className="w-fit h-fit rounded-2xl drop-shadow-lg">
+			<div className="col-start-1 col-span-2 md:col-start-9 md:col-span-4 2xl:col-start-9 2xl:col-span-4 row-start-1 row-span-5">
+				<div className="mx-auto h-[320px] w-[320px] xl:w-[350px] xl:h-[350px] 2xl:h-[400px] 2xl:w-[400px] rounded-2xl drop-shadow-lg">
 					<Image
 						alt="Bryan Berger"
 						className="rounded-2xl relative z-10"
-						height={ 400 }
+						sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
 						src={ bryanJpg }
-						width={ 400 }
+						fill
 					/>
 				</div>
 			</div>

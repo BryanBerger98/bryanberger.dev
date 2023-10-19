@@ -1,3 +1,4 @@
+import awsDarkJPG from './assets/aws-dark.jpg';
 import mongoDBPng from './assets/mongodb.png';
 import nextCircleBlackPng from './assets/nextjs-circle-black.png';
 import reactPng from './assets/react.png';
@@ -10,10 +11,11 @@ const projects: ProjectData[] = [
 	{
 		id: 1,
 		title: 'datepicker',
-		description: 'React date picker designed with shadcn/ui.',
+		description: 'Composable React date picker inspired by react-day-picker.',
 		github_url: 'https://github.com/BryanBerger98/datepicker',
 		status: 'under-development',
 		github_stars: 0,
+		github_forks: 0,
 		technos: [
 			{
 				title: 'React',
@@ -31,6 +33,10 @@ const projects: ProjectData[] = [
 				title: 'Vite',
 				photo_url: vitePng,
 			},
+			{
+				title: 'NextJS',
+				photo_url: nextCircleBlackPng,
+			},
 		],
 	},
 	{
@@ -39,7 +45,8 @@ const projects: ProjectData[] = [
 		description: 'NextJS starter boilerplate for web applications.',
 		github_url: 'https://github.com/BryanBerger98/lodge-v2',
 		status: 'under-development',
-		github_stars: 1,
+		github_stars: 2,
+		github_forks: 1,
 		technos: [
 			{
 				title: 'React',
@@ -60,6 +67,10 @@ const projects: ProjectData[] = [
 			{
 				title: 'NextJS',
 				photo_url: nextCircleBlackPng,
+			},
+			{
+				title: 'AWS',
+				photo_url: awsDarkJPG,
 			},
 		],
 	},
