@@ -1,4 +1,4 @@
-import { ExternalLink, Star } from 'lucide-react';
+import { ExternalLink, GitFork, Star } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
@@ -14,6 +14,7 @@ export type ProjectData = {
 	github_url?: string,
 	youtube_url?: string,
 	github_stars?: number,
+	github_forks?: number,
 	status: 'under-development' | 'archived' | 'released',
 	website_url?: string,
 	technos: {
@@ -53,7 +54,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 							<Badge
 								className="flex items-center gap-2"
 								variant="secondary"
-							><Star size="16" /><span>{ project.github_stars } stars</span>
+							><Star size="16" /><span>{ project.github_stars } star{ project.github_stars > 1 ? 's' : '' }</span>
+							</Badge>
+						) : null
+					}
+					{
+						project.github_forks ? (
+							<Badge
+								className="flex items-center gap-2"
+								variant="secondary"
+							><GitFork size="16" /><span>{ project.github_forks } fork{ project.github_forks > 1 ? 's' : '' }</span>
 							</Badge>
 						) : null
 					}
