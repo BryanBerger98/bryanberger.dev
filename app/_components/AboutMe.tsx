@@ -70,7 +70,6 @@ const AboutMe = () => {
 					<Image
 						alt="Bryan Berger"
 						className="rounded-2xl relative z-10"
-						sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
 						src={ bryanJpg }
 						fill
 					/>
