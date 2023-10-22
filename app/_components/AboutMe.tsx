@@ -66,10 +66,10 @@ const AboutMe = () => {
 				</div>
 			</div>
 			<div className="col-start-1 col-span-2 md:col-start-9 md:col-span-4 2xl:col-start-9 2xl:col-span-4 row-start-1 row-span-5">
-				<div className="mx-auto h-[320px] w-[320px] xl:w-[350px] xl:h-[350px] 2xl:h-[400px] 2xl:w-[400px] rounded-2xl drop-shadow-lg">
+				<div className="mx-auto relative h-[320px] w-[320px] xl:w-[350px] xl:h-[350px] 2xl:h-[400px] 2xl:w-[400px] rounded-2xl drop-shadow-lg">
 					<Image
 						alt="Bryan Berger"
-						className="rounded-2xl relative z-10"
+						className="rounded-2xl z-10"
 						src={ bryanJpg }
 						fill
 					/>
