@@ -11,10 +11,11 @@ const projects: ProjectData[] = [
 	{
 		id: 1,
 		title: 'datepicker',
-		description: 'Composable React date picker inspired by react-day-picker.',
+		description: 'Composable React datepicker inspired by react-day-picker.',
 		github_url: 'https://github.com/BryanBerger98/datepicker',
-		status: 'under-development',
-		github_stars: 0,
+		npm_url: 'https://www.npmjs.com/package/@bryanberger/datepicker',
+		status: 'released',
+		github_stars: 2,
 		github_forks: 0,
 		technos: [
 			{
@@ -45,7 +46,7 @@ const projects: ProjectData[] = [
 		description: 'NextJS starter boilerplate for web applications.',
 		github_url: 'https://github.com/BryanBerger98/lodge-v2',
 		status: 'under-development',
-		github_stars: 2,
+		github_stars: 4,
 		github_forks: 1,
 		technos: [
 			{
