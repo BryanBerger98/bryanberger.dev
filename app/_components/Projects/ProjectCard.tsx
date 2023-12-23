@@ -16,6 +16,7 @@ export type ProjectData = {
 	github_stars?: number,
 	github_forks?: number,
 	status: 'under-development' | 'archived' | 'released',
+	version?: string,
 	website_url?: string,
 	technos: {
 		title: string;
@@ -69,23 +70,27 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					}
 				</div>
 			</CardHeader>
-			<CardContent>
-				<div className="flex gap-2">
-					{
-						project.technos.map((techno) => (
-							<Image
-								key={ techno.title }
-								alt={ techno.title }
-								className="rounded-sm"
-								height="24"
-								src={ techno.photo_url }
-								title={ techno.title }
-								width="24"
-							/>
-						))
-					}
-				</div>
-			</CardContent>
+			{
+				project.technos.length > 0 ? (
+					<CardContent>
+						<div className="flex gap-2">
+							{
+								project.technos.map((techno) => (
+									<Image
+										key={ techno.title }
+										alt={ techno.title }
+										className="rounded-sm"
+										height="24"
+										src={ techno.photo_url }
+										title={ techno.title }
+										width="24"
+									/>
+								))
+							}
+						</div>
+					</CardContent>
+				) : null
+			}
 			<CardFooter className="justify-end gap-4">
 				{
 					project.website_url ? (

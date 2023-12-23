@@ -4,7 +4,7 @@ const projects: ProjectData[] = [
 	{
 		id: 1,
 		title: 'Atomic React',
-		description: 'French YouTube channel about React and learning platform.',
+		description: 'French YouTube channel about React.',
 		status: 'released',
 		website_url: 'https://atomic-react.com',
 		youtube_url: 'https://www.youtube.com/@atomicreact',
