@@ -101,6 +101,19 @@ const Footer = () => {
 								asChild
 							>
 								<Link
+									href="https://www.threads.net/@bryanberger.dev"
+									target="_blank"
+								>
+									Threads
+								</Link>
+							</Button>
+						</li>
+						<li>
+							<Button
+								variant="link"
+								asChild
+							>
+								<Link
 									href="https://linkedin.com/in/bryanbrg"
 									target="_blank"
 								>

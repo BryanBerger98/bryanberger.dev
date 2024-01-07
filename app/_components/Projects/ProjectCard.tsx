@@ -73,7 +73,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 			{
 				project.technos.length > 0 ? (
 					<CardContent>
-						<div className="flex gap-2">
+						<div className="flex gap-2 flex-wrap">
 							{
 								project.technos.map((techno) => (
 									<Image
@@ -91,11 +91,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					</CardContent>
 				) : null
 			}
-			<CardFooter className="justify-end gap-4">
+			<CardFooter className="flex-col justify-center md:flex-row md:justify-end gap-4 flex-wrap">
 				{
 					project.website_url ? (
 						<Button
-							className="gap-2 items-center"
+							className="gap-2 items-center w-full md:w-fit"
 							variant="outline"
 							asChild
 						>
@@ -111,7 +111,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 				{
 					project.npm_url ? (
 						<Button
-							className="gap-2 items-center"
+							className="gap-2 items-center w-full md:w-fit"
 							variant="destructive"
 							asChild
 						>
@@ -127,7 +127,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 				{
 					project.youtube_url ? (
 						<Button
-							className="gap-2 items-center"
+							className="gap-2 items-center w-full md:w-fit"
 							variant="destructive"
 							asChild
 						>
@@ -143,7 +143,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 				{
 					project.github_url ? (
 						<Button
-							className="gap-2 items-center"
+							className="gap-2 items-center w-full md:w-fit"
 							asChild
 						>
 							<Link
