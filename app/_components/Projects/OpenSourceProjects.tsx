@@ -14,8 +14,9 @@ const projects: ProjectData[] = [
 		description: 'Composable React datepicker inspired by react-day-picker.',
 		github_url: 'https://github.com/BryanBerger98/datepicker',
 		npm_url: 'https://www.npmjs.com/package/@bryanberger/datepicker',
+		website_url: 'https://datepicker.bryanberger.dev',
 		status: 'released',
-		github_stars: 2,
+		github_stars: 4,
 		github_forks: 0,
 		technos: [
 			{
