@@ -1,4 +1,6 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,6 +12,23 @@ export const metadata: Metadata = {
 		name: 'Bryan Berger',
 		url: 'https://bryanberger.dev',
 	},
+	metadataBase: new URL('https://bryanberger.dev'),
+	openGraph: {
+		type: 'website',
+		locale: 'en_US',
+		url: 'https://bryanberger.dev',
+		title: 'Bryan Berger',
+		description: 'Bryan Berger, a passionate web developer. I build websites and apps with React, Next.js, TypeScript and TailwindCSS.',
+		siteName: 'Bryan Berger',
+		images: [
+			{
+				url: 'https://bryanberger.dev/og.jpg',
+				width: 1200,
+				height: 630,
+				alt: 'Bryan Berger',
+			},
+		],
+	},
 };
 
 const RootLayout = ({ children }: {
@@ -18,6 +37,8 @@ const RootLayout = ({ children }: {
 	return (
 		<html lang="en">
 			<body>{ children }</body>
+			<Analytics />
+			<SpeedInsights />
 		</html>
 	);
 };
