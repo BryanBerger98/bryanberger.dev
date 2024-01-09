@@ -16,7 +16,7 @@ const projects: ProjectData[] = [
 		npm_url: 'https://www.npmjs.com/package/@bryanberger/datepicker',
 		website_url: 'https://datepicker.bryanberger.dev',
 		status: 'released',
-		github_stars: 4,
+		github_stars: 10,
 		github_forks: 0,
 		technos: [
 			{
