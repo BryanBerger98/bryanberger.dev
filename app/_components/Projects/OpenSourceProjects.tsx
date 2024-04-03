@@ -16,8 +16,9 @@ const projects: ProjectData[] = [
 		npm_url: 'https://www.npmjs.com/package/@bryanberger/datepicker',
 		website_url: 'https://datepicker.bryanberger.dev',
 		status: 'released',
-		github_stars: 10,
-		github_forks: 0,
+		github_stars: 13,
+		github_forks: 1,
+		license: 'MIT',
 		technos: [
 			{
 				title: 'React',
@@ -42,6 +43,18 @@ const projects: ProjectData[] = [
 		],
 	},
 	{
+		id: 1,
+		title: 'eslint-config-bryanberger',
+		description: 'My personal ESLint config.',
+		github_url: 'https://github.com/BryanBerger98/eslint-config-bryanberger',
+		npm_url: 'https://www.npmjs.com/package/eslint-config-bryanberger',
+		status: 'released',
+		github_stars: 2,
+		github_forks: 0,
+		license: 'MIT',
+		technos: [],
+	},
+	{
 		id: 2,
 		title: 'lodge-v2',
 		description: 'NextJS starter boilerplate for web applications.',
@@ -49,6 +62,7 @@ const projects: ProjectData[] = [
 		status: 'under-development',
 		github_stars: 4,
 		github_forks: 1,
+		license: 'MIT',
 		technos: [
 			{
 				title: 'React',
