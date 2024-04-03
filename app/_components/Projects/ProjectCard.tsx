@@ -1,4 +1,4 @@
-import { ExternalLink, GitFork, Star } from 'lucide-react';
+import { ExternalLink, GitFork, Scale, Star } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
@@ -18,6 +18,7 @@ export type ProjectData = {
 	status: 'under-development' | 'archived' | 'released',
 	version?: string,
 	website_url?: string,
+	license?: string,
 	technos: {
 		title: string;
 		photo_url: StaticImageData;
@@ -65,6 +66,17 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 								className="flex items-center gap-2"
 								variant="secondary"
 							><GitFork size="16" /><span>{ project.github_forks } fork{ project.github_forks > 1 ? 's' : '' }</span>
+							</Badge>
+						) : null
+					}
+					{
+						project.license ? (
+							<Badge
+								className="flex items-center gap-2"
+								variant="secondary"
+							>
+								<Scale size="16" />
+								{ project.license }
 							</Badge>
 						) : null
 					}
