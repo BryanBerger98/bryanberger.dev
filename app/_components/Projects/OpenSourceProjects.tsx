@@ -16,8 +16,8 @@ const projects: ProjectData[] = [
 		npm_url: 'https://www.npmjs.com/package/@bryanberger/datepicker',
 		website_url: 'https://datepicker.bryanberger.dev',
 		status: 'released',
-		github_stars: 13,
-		github_forks: 1,
+		github_stars: 20,
+		github_forks: 3,
 		license: 'MIT',
 		technos: [
 			{
@@ -49,7 +49,7 @@ const projects: ProjectData[] = [
 		github_url: 'https://github.com/BryanBerger98/eslint-config-bryanberger',
 		npm_url: 'https://www.npmjs.com/package/eslint-config-bryanberger',
 		status: 'released',
-		github_stars: 2,
+		github_stars: 7,
 		github_forks: 0,
 		license: 'MIT',
 		technos: [],
