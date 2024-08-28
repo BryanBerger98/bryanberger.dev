@@ -6,11 +6,41 @@ import firebasePng from './assets/firebase.png';
 import mongoDBPng from './assets/mongodb.png';
 import nextCircleBlackPng from './assets/nextjs-circle-black.png';
 import reactPng from './assets/react.png';
+import supabasePng from './assets/supabase.png';
 import tailwindPng from './assets/tailwind.png';
 import typescriptPng from './assets/typescript.png';
 import ProjectCard, { ProjectData } from './ProjectCard';
 
 const projects: ProjectData[] = [
+	{
+		id: 3,
+		title: 'Curriculum.',
+		description: 'All your career in one single place.',
+		status: 'released',
+		website_url: 'https://curriculum.page',
+		technos: [
+			{
+				title: 'React',
+				photo_url: reactPng,
+			},
+			{
+				title: 'Tailwind',
+				photo_url: tailwindPng,
+			},
+			{
+				title: 'TypeScript',
+				photo_url: typescriptPng,
+			},
+			{
+				title: 'Supabase',
+				photo_url: supabasePng,
+			},
+			{
+				title: 'NextJS',
+				photo_url: nextCircleBlackPng,
+			},
+		],
+	},
 	{
 		id: 1,
 		title: 'Shellby.io',

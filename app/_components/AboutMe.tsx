@@ -48,7 +48,7 @@ const AboutMe = () => {
 						<span>, a YouTube channel specialized in React and its ecosystem, for helping people to improve their skills and learn new things.</span>
 					</p>
 					<p className="text-sm lg:text-base">
-						<span className="mr-1">I also love the concept of behind the open-source idea. The most of my projects are open-source, under MIT lisense, and available on my</span>
+						<span className="mr-1">I also love the concept of behind the open-source idea. The most of my projects are open-source, under MIT license, and available on my</span>
 						<Button
 							className="font-bold text-base p-0 h-fit"
 							variant="link"
